@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOIST</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <script src="https://kit.fontawesome.com/46ad5ba21c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -19,7 +20,6 @@
                         <img src="./img/logo.png" alt="moist_logo">
                     </button>
                 </a>
-                
                 <ul class="clothing-sections">
                     <li><a href="#">HOMBRES</a></li>
                     <li><a href="#">MUJERES</a></li>
@@ -27,9 +27,9 @@
                 <div class="search-container">
                     <form>
                         <input type="text" placeholder="Ingrese producto">
-                        
+                        <i class="fa-solid fa-magnifying-glass search-lupe"></i>
                     </form>
-                    <i class="fa-solid fa-magnifying-glass search-lupe"></i>
+                    
                 </div>
             </div>
             <div class="right-navbar">
@@ -48,7 +48,6 @@
     <main>
         <section class="carousel-section">
             <div class="carousel-container">
-
             </div>
         </section>
         <section class="tsellers-section">
@@ -59,19 +58,29 @@
                         <div class="clothing-img">
                             <img src="" alt="">
                         </div>
-                        <button>COMPRAR</button>
+                        <div class="clothing-box-title">
+                            <h2>NOMBRE PRENDA 1</h2>
+                            <button>COMPRAR</button>
+                        </div>
+                        
                     </div>
                     <div class="clothing-box">
                         <div class="clothing-img">
                             <img src="" alt="">
                         </div>
-                        <button>COMPRAR</button>
+                        <div class="clothing-box-title">
+                            <h2>NOMBRE PRENDA 2</h2>
+                            <button>COMPRAR</button>
+                        </div>
                     </div>
                     <div class="clothing-box">
                         <div class="clothing-img">
                             <img src="" alt="">
                         </div>
-                        <button>COMPRAR</button>
+                        <div class="clothing-box-title">
+                            <h2>NOMBRE PRENDA 3</h2>
+                            <button>COMPRAR</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,30 +114,35 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-links">
-            <div class="fhelp-wrapper">
-                <ul>
-                    <li><a href="#">Servicio al cliente</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="fhelp-wrapper">
+                    <h2>Ayuda</h2>
+                    <ul>
+                        <li><a href="#">Servicio al cliente</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="fabout-wrapper">
+                    <h2>Sobre nosotros</h2>
+                    <ul>
+                        <li><a href="#">Misión</a></li>
+                        <li><a href="#">Visión</a></li>
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="fothers-wrapper">
+                    <h2>Otros</h2>
+                    <ul>
+                        <li><a href="#">Tarjetas de regalo</a></li>
+                        <li><a href="#">Suscríbete</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="fabout-wrapper">
-                <ul>
-                    <li><a href="#">Misión</a></li>
-                    <li><a href="#">Visión</a></li>
-                    <li><a href="#">Historia</a></li>
-                    <li><a href="#">Trabaja con nosotros</a></li>
-                </ul>
-            </div>
-            <div class="fothers-wrapper">
-                <ul>
-                    <li><a href="#">Tarjetas de regalo</a></li>
-                    <li><a href="#">Suscríbete</a></li>
-                </ul>
-            </div>
+            <h1>MOIST</h1>
         </div>
-        <h1>MOIST</h1>
     </footer>
 </body>
 </html>

@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --black: #2D2D2D;
+    --gray: #525050;
+    --red: #FF385C;
+    --lightgray: #EEEEEE;
+}
+
+/* HEADER STYLE*/
+header{
+    height: 70px;
+    background-color: var(--black);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.left-navbar{
+    display: flex;
+}
+
+.logo-button{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-right: 2px solid var(--gray);
+}
+
+.logo-button img{
+    width: 60%;
+}
+
+.clothing-sections{
+    display: flex;
+    align-items: center;
+}
+
+.clothing-sections li{
+    list-style: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.clothing-sections li:hover{
+    background-color: var(--gray);
+}
+
+.clothing-sections li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.clothing-sections li:nth-child(1){
+    border-right: 2px solid var(--gray)
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-left: 2px solid var(--gray);
+}
+
+.search-container input{
+    width: 700px;
+}
+
+.search-container input{
+    padding-left: 14px;
+    height: 40px;
+    border-radius: 19px/50%;
+    border: 1px solid transparent;
+}
+
+.search-container input:focus{
+    outline: none;
+    border: 1px solid cyan;
+}
+
+.search-lupe{
+    position: relative;
+    color: var(--gray);
+    right: 32px;
+}
+
+.right-navbar{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar-btn{
+    background: none;
+    border:none;
+    height: 70px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.navbar-btn:nth-child(1){
+    border-left: 2px solid var(--gray);
+    border-right: 2px solid var(--gray);
+}
+
+.navbar-btn:hover{
+    background-color: var(--gray);
+}
+
+.navbar-btn i{
+    font-size: 18px;
+    color: white;
+}
+
+/* PROMOCODE STYLE*/
+.promocode-container{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-top: 95px;
+}
+
+.promocode-container marquee{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: .15rem;
+    background-color: var(--red);
+    padding-top: 12px;
+    height: 50px;
+}
+
+/* FOOTER STYLE*/
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightgray);
+    padding: 4rem 2.5rem 0 2.5rem;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.footer-links div{
+    height: 180px;
+}
+
+.footer-links h2{
+    margin-bottom: 14px;
+    color: #666;
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-links ul li {
+    list-style: none;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.footer-links ul li a:hover{
+    color: blue;
+}
+
+.footer-container h1{
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: .5rem;
+}
+
