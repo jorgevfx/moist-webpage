@@ -15,18 +15,18 @@
     <header class="header">
         <div class="navbar-container">
             <div class="left-navbar">
-                <a href="#">
+                <a href="./">
                     <button class="logo-button">
                         <img src="./img/logo.png" alt="moist_logo">
                     </button>
                 </a>
                 <ul class="clothing-sections">
-                    <li><a href="#">HOMBRES</a></li>
-                    <li><a href="#">MUJERES</a></li>
+                    <li><a href="./pages/hombres.html">HOMBRES</a></li>
+                    <li><a href="./pages/mujeres.html">MUJERES</a></li>
                 </ul>
                 <div class="search-container">
                     <form>
-                        <input type="text" placeholder="Ingrese producto">
+                        <input type="text" placeholder="Ingrese producto" id="seach-field">
                         <i class="fa-solid fa-magnifying-glass search-lupe"></i>
                     </form>
                     
@@ -48,6 +48,22 @@
     <main>
         <section class="carousel-section">
             <div class="carousel-container">
+                <div class="slider-wrapper" id="slider-wrapper">
+                    <div class="slider-section">
+                        <img src="./img/carousel-men.webp" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section">
+                        <img src="./img/carousel-people.jpg" class="slider-img">
+                    </div>
+                    <div class="slider-section">
+                        <img src="./img/carousel-men-styles.jpg" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section">
+                        <img src="./img/carousel-women-styles.jpg" alt="" class="slider-img">
+                    </div>
+                </div>
+                <div class="slider-btn slider-btn-right" id="btn-right">&#62;</div>
+                <div class="slider-btn slider-btn-left" id="btn-left">&#60;</div>
             </div>
         </section>
         <section class="tsellers-section">
@@ -56,62 +72,61 @@
                 <div class="clothing-wrapper">
                     <div class="clothing-box">
                         <div class="clothing-img">
-                            <img src="" alt="">
+                            <img src="./img/clothes/georgia-hoodie.webp" alt="">
                         </div>
                         <div class="clothing-box-title">
-                            <h2>NOMBRE PRENDA 1</h2>
-                            <button>COMPRAR</button>
-                        </div>
-                        
-                    </div>
-                    <div class="clothing-box">
-                        <div class="clothing-img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="clothing-box-title">
-                            <h2>NOMBRE PRENDA 2</h2>
+                            <h2>GEORGIA HOODIE</h2>
                             <button>COMPRAR</button>
                         </div>
                     </div>
                     <div class="clothing-box">
                         <div class="clothing-img">
-                            <img src="" alt="">
+                            <img src="./img/clothes/nike-dress.webp" alt="">
                         </div>
                         <div class="clothing-box-title">
-                            <h2>NOMBRE PRENDA 3</h2>
+                            <h2>NIKE VESTIDO</h2>
                             <button>COMPRAR</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="icons-container">
-                <div class="social-wrapper">
-                    <button>
-                        <i class="fa-brands fa-facebook"></i>
-                    </button>
-                    <button>
-                        <i class="fa-brands fa-instagram"></i>
-                    </button>
-                    <button>
-                        <i class="fa-brands fa-twitter"></i>
-                    </button>
-                </div>
-                <div class="payments-wrapper">
-                    <button>
-                        <i class="fa-brands fa-cc-visa"></i>
-                    </button>
-                    <button>
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                    </button>
-                    <button>
-                        <i class="fa-brands fa-cc-diners-club"></i>
-                    </button>
-                    <button>
-                        <i class="fa-brands fa-cc-amex"></i>
-                    </button>
+                    <div class="clothing-box">
+                        <div class="clothing-img">
+                            <img src="./img/clothes/men-shorts.webp" alt="">
+                        </div>
+                        <div class="clothing-box-title">
+                            <h2>CARGO SHORTS</h2>
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <div class="icons-container">
+            <div class="social-wrapper">
+                <button>
+                    <i class="fa-brands fa-facebook"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-instagram"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-twitter"></i>
+                </button>
+            </div>
+            <div class="payments-wrapper">
+                <button>
+                    <i class="fa-brands fa-cc-visa"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-cc-amex"></i>
+                </button>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-container">
@@ -127,10 +142,10 @@
                 <div class="fabout-wrapper">
                     <h2>Sobre nosotros</h2>
                     <ul>
-                        <li><a href="#">Misión</a></li>
-                        <li><a href="#">Visión</a></li>
-                        <li><a href="#">Historia</a></li>
-                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="./pages/nosotros.html#mision">Misión</a></li>
+                        <li><a href="./pages/nosotros.html#vision">Visión</a></li>
+                        <li><a href="./pages/nosotros.html#historia">Historia</a></li>
+                        <li><a href="./pages/nosotros.html#trabajo">Trabaja con nosotros</a></li>
                     </ul>
                 </div>
                 <div class="fothers-wrapper">
@@ -144,5 +159,7 @@
             <h1>MOIST</h1>
         </div>
     </footer>
+    <div id="overlay"></div>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>
