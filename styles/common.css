@@ -11,6 +11,10 @@
     --red: #FF385C;
     --lightgray: #EEEEEE;
 }
+
+html{
+    zoom: 110%;
+}
 /*
 #overlay{
     position: fixed;
@@ -29,7 +33,7 @@ header{
     background-color: var(--black);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 .navbar-container{
@@ -215,7 +219,6 @@ header{
 .icons-container{
     display: flex;
     justify-content: center;
-    border-top: 1px solid var(--gray);
     padding: 1rem;
 }
 
