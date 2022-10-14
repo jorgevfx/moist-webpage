@@ -1,0 +1,90 @@
+.giftcard-section{
+    margin-top: 25px;
+}
+
+.giftcard-container{
+    padding: 5rem 0;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.giftcard-title{
+    border: 1.5px solid black;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.giftcard-title h1{
+    font-size: 32px;
+    letter-spacing: 0.15rem;
+}
+
+.giftcard-details{
+    margin-top: 20px;
+    border: 1.5px solid black;
+    padding: 2rem 3rem;
+}
+
+.giftcard-details h3{
+    font-size: 22px;
+}
+
+.amounts-ct{
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.amount-box{
+    border: 1.5px solid black;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.giftcard-container form{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.giftcard-container form label{
+    margin-top: 16px;
+}
+
+.giftcard-container form input,textarea{
+    margin-top: 10px;
+}
+
+.giftcard-container form input{
+    padding-left: 1rem;
+    height: 50px;
+}
+
+.giftcard-container form textarea{
+    padding: 1rem;
+    height: 140px;
+}
+
+.btn-pagar{
+    margin-top: 20px !important;
+    background-color: #018849;
+    border: none;
+    color: white;
+    font-weight: 600;
+    height: 50px !important;
+    letter-spacing: .1rem;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-pagar:hover{
+    background-color:#01522c
+}

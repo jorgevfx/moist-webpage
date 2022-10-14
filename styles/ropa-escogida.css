@@ -1,0 +1,84 @@
+.men-chosen-section{
+    margin-top: 25px;
+}
+
+.c-chosen-container{
+    padding: 2rem 5rem;
+}
+
+.old-pages-wr ul{
+    display: flex;
+    gap: 4px;
+}
+
+.old-pages-wr li{
+    list-style: none;
+}
+
+.old-pages-wr li a{
+    color: blue;
+}
+
+.clothing-c-wr{
+    padding: 2rem 8rem 2rem 21rem;
+    display: flex;
+    width: 100%;
+    height: 620px;
+}
+
+.clothing-c-img{
+    width: 60%;
+    border: 1px solid red;
+}
+
+.clothing-c-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    padding: 2rem 4rem;
+}
+
+.clothing-c-details h1{
+    font-size: 34px;
+}
+
+.clothing-c-details h2{
+    font-size: 24px;
+}
+
+.color-ct{
+    display: flex;
+    gap: 12px;
+}
+
+.color-box{
+    border: 1px solid blue;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.clothing-c-details select{
+    height: 40px;
+    font-size: 16px;
+}
+
+.clothing-c-details button{
+    background-color: #018849;
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    height: 50px;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.clothing-c-details button:hover{
+    background-color:#01522c
+}
+
+
+

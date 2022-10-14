@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOIST</title>
     <link rel="stylesheet" href="../styles/common.css">
-    <link rel="stylesheet" href="../styles/mujeres.css">
+    <link rel="stylesheet" href="../styles/giftcards.css">
     <script src="https://kit.fontawesome.com/46ad5ba21c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,53 +41,44 @@
                 </button>  
             </div>
         </div>
-        <div class="women-navbar">
-            <ul class="women-navbar-links sub-menu">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Ropa</a></li>
-                <li><a href="#">Zapatillas</a></li>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Primavera</a></li>
-                <li><a href="#">Tendencias</a></li>
-            </ul>
-        </div>
-        <div class="women clothing-list" id="sublist">
-            <div class="clothing-list-wr" id="sublist-wr">
-                
-            </div>
-        </div>
-        <div class="backdrop" id="backdrop"></div>
     </header>
     <div class="promocode-container">
         <marquee behavior="" direction="">CÓDIGO PROMOCIONAL: ABCDEFG</marquee>
     </div>
     <main>
-        <section class="women-main-section">
-            <div class="women-main--wrapper">
-                <div class="women-box">
-                    <div class="women-img-wr">
-                        <img src="../img/clothes/women-dresses.jpg" alt="">
-                    </div>
-                    <h1>VESTIDOS UNICOS</h1>
-                    <p>Solo para ti</p>
+        <section class="giftcard-section" id="giftcard-section">
+            <div class="giftcard-container">
+                <div class="giftcard-title">
+                    <h1>TARJETAS DE REGALO</h1>
                 </div>
-                <div class="women-box">
-                    <div class="women-img-wr">
-                        <img src="../img/clothes/women-news.webp" alt="">
+                <div class="giftcard-details">
+                    <h3>Monto</h3>
+                    <div class="amounts-ct">
+                        <div class="amount-box">
+                            <p>S/. 20</p>
+                        </div>
+                        <div class="amount-box">
+                            <p>S/. 50</p>
+                        </div>
+                        <div class="amount-box">
+                            <p>S/. 100</p>
+                        </div>
+                        <div class="amount-box">
+                            <p>S/. 200</p>
+                        </div>
                     </div>
-                    <h1>NUEVOS INGRESOS</h1>
-                    <p>Lo mejor del mes</p>
-                </div>
-                <div class="women-box">
-                    <div class="women-img-wr">
-                        <img src="../img/clothes/women-boots.webp"" alt="">
-                    </div>
-                    <h1>BOTAS</h1>
-                    <p>Para ocasiones únicas</p>
+                    <form>
+                        <label for="receiver">PARA:</label>
+                        <input type="text" id="receiver" placeholder="Ingresa el correo del destinatario">
+                        <input type="text" id="receiver" placeholder="Ingresa el nombre del destinatario">
+                        <label for="person">DE:</label>
+                        <input type="text" placeholder="Ingresa tu nombre">
+                        <textarea placeholder="Mensaje especial"></textarea>
+                        <input type="button" value="PAGAR" class="btn-pagar">
+                    </form>
                 </div>
             </div>
         </section>
-
         <div class="icons-container">
             <div class="social-wrapper">
                 <button>
@@ -130,16 +121,16 @@
                 <div class="fabout-wrapper">
                     <h2>Sobre nosotros</h2>
                     <ul>
-                        <li><a href="nosotros.html#vision">Misión</a></li>
-                        <li><a href="nosotros.html#vision">Visión</a></li>
-                        <li><a href="nosotros.html#historia">Historia</a></li>
-                        <li><a href="nosotros.html#trabajo">Trabaja con nosotros</a></li>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#vision">Visión</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#trabajo">Trabaja con nosotros</a></li>
                     </ul>
                 </div>
                 <div class="fothers-wrapper">
                     <h2>Otros</h2>
                     <ul>
-                        <li><a href="#">Tarjetas de regalo</a></li>
+                        <li><a href="#giftcard-section">Tarjetas de regalo</a></li>
                         <li><a href="#">Suscríbete</a></li>
                     </ul>
                 </div>
@@ -147,6 +138,5 @@
             <h1>MOIST</h1>
         </div>
     </footer>
-    <script src="../js/main.js" type="module"></script>
 </body>
 </html>

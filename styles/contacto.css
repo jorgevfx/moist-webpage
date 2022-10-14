@@ -1,0 +1,39 @@
+.contact-section{
+    margin-top: 25px;
+}
+
+.contact-container{
+    padding: 3rem 5rem;
+}
+
+.contact-title{
+    border: 1.5px solid black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title h1{
+    font-size: 80px;
+    letter-spacing: .5rem;
+}
+
+.contact-details{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.contact-details div li{
+    list-style: none;
+}
+
+.contact-img{
+    margin-top: 30px;
+    border: 1px solid red;
+    width: 100%;
+    height: 100px;
+}

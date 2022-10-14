@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOIST</title>
     <link rel="stylesheet" href="../styles/common.css">
-    <link rel="stylesheet" href="../styles/mujeres.css">
+    <link rel="stylesheet" href="../styles/hombres.css">
+    <link rel="stylesheet" href="../styles/ropa-escogida.css">
     <script src="https://kit.fontawesome.com/46ad5ba21c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +30,6 @@
                         <input type="text" placeholder="Ingrese producto">
                         <i class="fa-solid fa-magnifying-glass search-lupe"></i>
                     </form>
-                    
                 </div>
             </div>
             <div class="right-navbar">
@@ -41,19 +41,19 @@
                 </button>  
             </div>
         </div>
-        <div class="women-navbar">
-            <ul class="women-navbar-links sub-menu">
+        <div class="men-navbar">
+            <ul class="men-navbar-links sub-menu">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Ropa</a></li>
                 <li><a href="#">Zapatillas</a></li>
                 <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Primavera</a></li>
+                <li><a href="#">Invierno</a></li>
                 <li><a href="#">Tendencias</a></li>
             </ul>
         </div>
-        <div class="women clothing-list" id="sublist">
+        <div class="men clothing-list" id="sublist">
             <div class="clothing-list-wr" id="sublist-wr">
-                
+                <h4 id="list-title">PRODUCTOS</h4>
             </div>
         </div>
         <div class="backdrop" id="backdrop"></div>
@@ -62,32 +62,53 @@
         <marquee behavior="" direction="">CÓDIGO PROMOCIONAL: ABCDEFG</marquee>
     </div>
     <main>
-        <section class="women-main-section">
-            <div class="women-main--wrapper">
-                <div class="women-box">
-                    <div class="women-img-wr">
-                        <img src="../img/clothes/women-dresses.jpg" alt="">
-                    </div>
-                    <h1>VESTIDOS UNICOS</h1>
-                    <p>Solo para ti</p>
+        <section class="men-chosen-section">
+            <div class="c-chosen-container">
+                <div class="old-pages-wr">
+                    <ul>
+                        <li><a href="">Casa</a></li>>
+                        <li><a href="">Hombres</a></li>>
+                        <li><a href="">Ropa</a></li>>
+                        <li><a href="">Tipo Ropa</a></li>>
+                        <li>Nombre ropa</li>
+                    </ul>
                 </div>
-                <div class="women-box">
-                    <div class="women-img-wr">
-                        <img src="../img/clothes/women-news.webp" alt="">
+                <div class="clothing-c-wr">
+                    <div class="clothing-c-img">
+                        <img src="" alt="">
                     </div>
-                    <h1>NUEVOS INGRESOS</h1>
-                    <p>Lo mejor del mes</p>
-                </div>
-                <div class="women-box">
-                    <div class="women-img-wr">
-                        <img src="../img/clothes/women-boots.webp"" alt="">
+                    <div class="clothing-c-details">
+                        <h1>NOMBRE ROPA</h1>
+                        <h2>S/. 100.00</h2>
+                        <div class="clothing-c-color">
+                            <h2>COLOR</h2>
+                            <div class="color-ct">
+                                <div class="color-box">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="color-box">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="color-box">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <select name="tallas" id="">
+                            <option value="S">Escoge la talla</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <button>
+                            AGREGAR
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
                     </div>
-                    <h1>BOTAS</h1>
-                    <p>Para ocasiones únicas</p>
                 </div>
             </div>
         </section>
-
         <div class="icons-container">
             <div class="social-wrapper">
                 <button>
