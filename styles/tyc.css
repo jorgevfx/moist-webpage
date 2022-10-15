@@ -64,6 +64,10 @@
     transition: .5s ease-in-out;
 }
 
+.tyc-list dd p{
+    text-align: justify;
+}
+
 .tyc-list dd.active{
     height: 0px;
 }
