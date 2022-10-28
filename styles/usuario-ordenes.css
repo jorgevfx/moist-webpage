@@ -1,0 +1,40 @@
+.info-wrapper{
+    overflow-y: scroll;
+}
+
+.inprogress-orders{
+    padding: .5rem;
+    border: 1px solid black;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.finished-orders{
+    border: 1px solid black;
+    padding: .5rem;
+    height: auto
+}
+
+.finished-order-box{
+    background-color: var(--gray);
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: .7rem;
+}
+
+.finished-order-box span{
+    background-color: black;
+    width: 60px;
+    height: 35px;
+    border-radius: 30%;
+}
+
+.finished-order-box p{
+    font-weight: 600;
+}
+
+.finished-order-box p:last-child{
+    font-size: 30px;
+}
