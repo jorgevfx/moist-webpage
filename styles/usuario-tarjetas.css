@@ -32,41 +32,46 @@
 
 .option-body{
     background-color: white;
-}
-
-.option-body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding: 1rem;
-    height: 100%;
+    gap: 50px;
+    padding: 2rem;
 }
 
-.hanger-wr{
+.card-general{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
-    height: 150px;
+    padding: 1.25rem;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid var(--black)
 }
 
-.option-body h2{
-    text-align: center;
+.card-general h2{
+    font-weight: bold;
 }
 
-.option-body button{
-    width: 60%;
-    border: none;
-    background-color: var(--black);
-    border: 1px solid var(--black);
-    color: white;
-    height: 50px;
-    font-size: 18px;
-    letter-spacing: 2px;
+.card-general button{
+    text-align: left;
+    all: unset;
+    cursor: pointer;
+}
+
+.card-general button:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.option-body i{
+    font-size: 80px;
     cursor: pointer;
     transition: .5s;
 }
 
-.option-body button:hover{
-    background-color: white;
+.option-body i:hover{
     color: var(--black)
 }
 
@@ -74,20 +79,15 @@
     display: none !important;
 }
 
-.option-title .fa-pen-to-square{
+.option-title .fa-credit-card{
     display: none;
 }
 
-footer{
-    bottom: 0 !important;
+.nuevatarjeta_btn{
+    all: unset;
 }
 
 @media (min-width: 1024px){
-
-    .header-wrapper{
-        margin-bottom: 2rem;
-    }
-    
     .option-title a{
         display: none;
     }
@@ -101,6 +101,10 @@ footer{
     .option-info{
         background-color: transparent !important;
         padding: 0 !important;
+    }
+
+    .card-general{
+        width: 85%;
     }
 
     .option-title {
@@ -118,28 +122,24 @@ footer{
         font-size: 34px;
     }
 
-    .option-title .fa-pen-to-square{
+    .option-title .fa-credit-card{
         display: block;
         font-size: 38px;
         margin-bottom: 14px;
     }
 
-    .container{
-        flex-direction: row;
+    .option-body{
+        height: 100%;
+        padding: 2rem 5rem;
     }
 
-    .ordenes{
+    .tarjetas{
         background-color: #F8F8F8 !important;
         border-left: 4px solid #0770CF;
     }
 
-    .ordenes p{
+    .tarjetas p{
         font-weight: bold !important;
     }
 
-    footer{
-        bottom: unset !important;
-    }
-
 }
-

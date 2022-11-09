@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/46ad5ba21c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../styles/usuario-general.css">
+    <link rel="stylesheet" href="../styles/usuario-giftcards.css">
     <link rel="stylesheet" href="../styles/usuario-common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>MOIST</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-wrapper">
@@ -59,7 +61,29 @@
                     </div>
                 </div>
                 <div class="option-info">
-                    <h1 class="opt-title">Bienvenido a tu cuenta</h1>
+                    <div class="option-title">
+                        <a href="./usuario-general.html"><i class="fa-solid fa-angle-left"></i></a>
+                        <a href="./usuario-general.html"><i class="fa-solid fa-user"></i></a>
+                        <i class="fa-solid fa-gift"></i>
+                        <h1>GIFTCARDS Y/O CUPONES</h1>
+                    </div>
+                    <div class="option-body">
+                        <h4 class="gf-title">Felicidades! Cuentas con 1 giftcard activo</h4>
+                        <div class="giftcard-wrapper position-relative">
+                            <div
+                                class="front d-flex align-items-center justify-content-evenly flex-wrap position-absolute w-100 h-100">
+                                <h1>TARJETA REGALO</h1>
+                                <i class="fa-solid fa-gift"></i>
+                            </div>
+                            <div
+                                class="back position-absolute d-flex flex-column justify-content-center align-content-center w-100 h-100">
+                                <p class="mb-3">Código:</p>
+                                <p class="mb-3" id="giftcard-code">1111111111111111</p>
+                                <button type="button" class="copy-gf btn btn-outline-light mb-3">Copiar</button>
+                            </div>
+                        </div>
+                        <p class="get-gf-p">Puedes adquirir tus giftcards <a href="./giftcards.html">aquí</a></p> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -71,8 +95,24 @@
             <p>© MOIST 2022</p>
         </div>
     </footer>
+    <script>
+        const card = document.querySelector(".giftcard-wrapper");
+        const front = document.querySelector('.front');
+        const back = document.querySelector('.back');
+
+        card.addEventListener('click', () => {
+            card.classList.toggle('active')
+        })
+
+        const copy_btn = document.querySelector('.copy-gf');
+        copy_btn.addEventListener('click', () => {
+            const code = document.getElementById('giftcard-code');
+            navigator.clipboard.writeText(code.textContent);
+        })
+    </script>
     <script src="../js/usuario_scripts.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
-
-

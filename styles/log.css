@@ -1,0 +1,183 @@
+/*VALORES INICIALES*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --black: #2D2D2D;
+    --gray: #525050;
+    --red: #FF385C;
+    --lightgray: #EEEEEE;
+}
+
+body{
+    background-color: var(--lightgray) !important;
+}
+
+.bg{
+    background-color: white;
+}
+
+main{
+    margin-bottom: 50px ;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 0 !important;
+
+}
+
+.moist-title{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 4rem auto;
+    text-decoration: none;
+    max-width: fit-content;
+    color: var(--black)
+}
+
+.moist-title:hover{
+    color: var(--black)
+}
+
+.changer-wrapper{
+    height: 50px;
+}
+
+.toggle-btn{
+    border: none;
+    background: none;
+    width: 49%;
+    height: 100%;
+    font-size: 18px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.login-page{
+    border-bottom: .25rem solid var(--black);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper{
+    background-color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 2rem 3rem;
+}
+
+.form label{
+    margin-top: 20px;
+}
+
+.input-field{
+    margin-top: 5px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.form p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-submit{
+    margin-top: 40px;
+    height: 40px;
+    background-color: var(--black);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.form-submit:hover{
+    background-color: white;
+    color: var(--black);
+}
+
+.register{
+    transform: translateX(100%);
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: white;
+}
+
+.footer-wrapper p,a{
+    color: black;
+    font-size: 18px;
+}
+
+.footer-wrapper p:first-child{
+    letter-spacing: -3px;
+}
+
+.alert{
+    display: none;
+    margin: 1.5rem 2rem 0 2rem !important;
+}
+
+@media (min-width: 1024px){
+    main{
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    .main-section{
+        height: 100vh;
+    }
+
+    .changer-wrapper{
+        height: 70px;
+    }
+
+    .toggle-btn{
+        font-size: 28px;
+    }
+
+    .form label{
+        font-size: 22px;
+    }
+
+    .input-field{
+        font-size: 22px;
+    }
+
+    .form-submit{
+        height: 50px;
+        font-size: 26px;
+    }
+
+    .footer-wrapper{
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 70px;
+    }
+
+}

@@ -20,6 +20,10 @@
     letter-spacing: 1.5px;
 }
 
+.main-section{
+    height: 950px !important;
+}
+
 .option-title a{
     font-size: 17px;
     cursor: pointer;
@@ -32,62 +36,59 @@
 
 .option-body{
     background-color: white;
-}
-
-.option-body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 1rem;
-    height: 100%;
+    gap: 50px;
+    padding: 2rem;
 }
 
-.hanger-wr{
-    width: 100%;
-    height: 150px;
+.option-body form{
+    display: flex;
+    flex-direction: column;
 }
 
-.option-body h2{
-    text-align: center;
-}
-
-.option-body button{
-    width: 60%;
-    border: none;
-    background-color: var(--black);
-    border: 1px solid var(--black);
-    color: white;
-    height: 50px;
+.option-body form p{
+    font-weight: bold;
     font-size: 18px;
+}
+
+.option-body form label{
+    margin-top: 20px;
+}
+
+.input-field{
+    margin-top: 5px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.form-submit{
+    margin-top: 24px;
+    height: 40px;
+    background-color: var(--black);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
     transition: .5s;
 }
 
-.option-body button:hover{
+.form-submit:hover{
     background-color: white;
-    color: var(--black)
+    color: var(--black);
 }
 
 .options-wrapper{
     display: none !important;
 }
 
-.option-title .fa-pen-to-square{
+.option-title .fa-id-card{
     display: none;
 }
 
-footer{
-    bottom: 0 !important;
-}
-
 @media (min-width: 1024px){
-
-    .header-wrapper{
-        margin-bottom: 2rem;
-    }
-    
     .option-title a{
         display: none;
     }
@@ -118,28 +119,25 @@ footer{
         font-size: 34px;
     }
 
-    .option-title .fa-pen-to-square{
+    .option-title .fa-id-card{
         display: block;
         font-size: 38px;
         margin-bottom: 14px;
     }
 
-    .container{
-        flex-direction: row;
+    .option-body{
+        height: 100%;
+        padding: 2rem 5rem;
+        overflow-y: scroll;
     }
 
-    .ordenes{
+    .datos{
         background-color: #F8F8F8 !important;
         border-left: 4px solid #0770CF;
     }
 
-    .ordenes p{
+    .datos p{
         font-weight: bold !important;
     }
 
-    footer{
-        bottom: unset !important;
-    }
-
 }
-
